@@ -18,6 +18,7 @@ public class FuncionarioModel {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer idFunc;
     private String nomeFunc;
+    @Column(unique = true)
     private String cpfFunc;
     private Double salarioFunc;
 

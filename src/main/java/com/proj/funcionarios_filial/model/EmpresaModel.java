@@ -17,6 +17,7 @@ public class EmpresaModel {
     @Id @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer idEmpresa;
     private String nomeEmpresa;
+    @Column(unique = true)
     private String cnpjEmpresa;
 
     @OneToMany(

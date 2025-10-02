@@ -5,6 +5,8 @@ import com.proj.funcionarios_filial.model.FuncionarioModel;
 import java.util.List;
 
 public record FilialCreateDTO (
-        String nomeFilial, String endereco, List<FuncionarioModel> funcionarios
+        String nomeFilial,
+        String endereco,
+        List<FuncionarioResponseDTO> funcionarios
 ){
 }
